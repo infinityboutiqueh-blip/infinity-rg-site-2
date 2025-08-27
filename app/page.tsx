@@ -14,9 +14,6 @@ import {
   CircleDollarSign,
 } from "lucide-react";
 
-// ✅ Import your enquiry form component
-import QuickEnquiryForm from "./components/QuickEnquiryForm";
-
 // Section component
 const Section = ({
   id,
@@ -112,11 +109,11 @@ export default function InfinityRGSite() {
             </div>
           </motion.div>
 
-          {/* ✅ Quick Enquiry Form Component */}
+          {/* ✅ Quick Enquiry Placeholder */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.6 }}>
             <div className="bg-slate-900 border border-slate-700 text-white rounded-3xl shadow-md shadow-blue-900/40 p-6">
               <div className="text-sm text-slate-400 mb-2">Quick enquiry</div>
-              <QuickEnquiryForm />
+              <p className="text-slate-400">Enquiry form coming soon...</p>
             </div>
           </motion.div>
         </div>
@@ -196,8 +193,8 @@ export default function InfinityRGSite() {
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2 bg-slate-900 border border-slate-700 text-white rounded-3xl shadow-md shadow-blue-900/40 p-6">
-            {/* ✅ Reuse the same form here */}
-            <QuickEnquiryForm />
+            {/* ✅ Placeholder instead of deleted QuickEnquiryForm */}
+            <p className="text-slate-400">Enquiry form coming soon...</p>
           </div>
           <div className="bg-slate-900 border border-slate-700 text-white rounded-3xl shadow-md shadow-blue-900/40 p-6 space-y-4">
             <div className="flex items-start gap-3">
