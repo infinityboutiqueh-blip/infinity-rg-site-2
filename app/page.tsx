@@ -14,6 +14,15 @@ import {
   CircleDollarSign,
 } from "lucide-react";
 
+// Temporary API placeholder (DB disabled)
+export async function POST(req: Request) {
+  return new Response(JSON.stringify({ message: "Database disabled for now" }), {
+    status: 200,
+    headers: { "Content-Type": "application/json" },
+  });
+}
+
+
 // Section component
 const Section = ({
   id,
